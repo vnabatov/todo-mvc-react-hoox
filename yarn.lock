@@ -963,10 +963,10 @@ babel-loader@^8.0.4:
     mkdirp "^0.5.1"
     util.promisify "^1.0.0"
 
-babel-plugin-rawact@^0.1.0:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-rawact/-/babel-plugin-rawact-0.1.1.tgz#5cc4e4fbdc1f37ae0030f6fa65ff65347fbf2839"
-  integrity sha512-uvJE50xCtf2X30Bu7PT/K3SSufezh3LWe1NeDzjmWkn660SSQLNFHDykxExtdllKulI4HDgU1LVuw2/3U5c5+A==
+babel-plugin-rawact@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-rawact/-/babel-plugin-rawact-0.3.0.tgz#f8fdf981ef39ca6ce7605b50ad7ecb1dd0a8b2b3"
+  integrity sha512-Pyf9WexraqiDdI3yN08qB2/tFdSwubQC+D0uX62IT4fqSQE3xc6/umUI7QZPkPtoQ1NO0X/qSFduUvdQUITAdw==
   dependencies:
     "@babel/core" "^7.1.2"
     "@babel/helper-plugin-utils" "^7.0.0"
@@ -2337,9 +2337,9 @@ js-tokens@^3.0.2:
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
 jsesc@^2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-2.5.1.tgz#e421a2a8e20d6b0819df28908f782526b96dd1fe"
-  integrity sha1-5CGiqOINawgZ3yiQj3glJrlt0f4=
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-2.5.2.tgz#80564d2e483dacf6e8ef209650a67df3f0c283a4"
+  integrity sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==
 
 jsesc@~0.5.0:
   version "0.5.0"
