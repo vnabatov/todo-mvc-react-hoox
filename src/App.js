@@ -1,9 +1,9 @@
-import React, { useState, useCallback } from "react";
-import Header from "./Header";
-import MainSection from "./MainSection";
+import React, { useState, useCallback } from 'react'
+import Header from './Header'
+import MainSection from './MainSection'
 
 const useTodos = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([])
 
   const addTodo = text => {
     setTodos([
@@ -13,16 +13,16 @@ const useTodos = () => {
         completed: false,
         text
       }
-    ]);
-  };
+    ])
+  }
 
   const deleteTodo = id => {
-    setTodos(todos.filter(todo => todo.id !== id));
-  };
+    setTodos(todos.filter(todo => todo.id !== id))
+  }
 
   const editTodo = (id, text) => {
-    setTodos(todos.map(todo => (todo.id === id ? { ...todo, text } : todo)));
-  };
+    setTodos(todos.map(todo => (todo.id === id ? { ...todo, text } : todo)))
+  }
 
   const toggleTodo = id => {
     setTodos(
@@ -30,22 +30,22 @@ const useTodos = () => {
         todo =>
           todo.id === id ? { ...todo, completed: !todo.completed } : todo
       )
-    );
-  };
+    )
+  }
 
   const toggleAllTodo = () => {
-    const areAllMarked = todos.every(todo => todo.completed);
+    const areAllMarked = todos.every(todo => todo.completed)
     setTodos(
       todos.map(todo => ({
         ...todo,
         completed: !areAllMarked
       }))
-    );
-  };
+    )
+  }
 
   const clearCompleted = () => {
-    setTodos(todos.filter(todo => todo.completed === false));
-  };
+    setTodos(todos.filter(todo => todo.completed === false))
+  }
 
   return [
     todos,
@@ -57,14 +57,14 @@ const useTodos = () => {
       toggleAllTodo,
       clearCompleted
     }
-  ];
-};
+  ]
+}
 
 const App = () => {
   const [
     todos,
     { addTodo, deleteTodo, editTodo, toggleTodo, toggleAllTodo, clearCompleted }
-  ] = useTodos();
+  ] = useTodos()
 
   return (
     <div>
@@ -78,7 +78,7 @@ const App = () => {
         clearCompleted={clearCompleted}
       />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

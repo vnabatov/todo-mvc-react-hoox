@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import ToDo from './ToDo';
+import ToDo from './ToDo'
 
-export default function() {
-    return <ToDo />;
+export default function () {
+  return <ToDo />
 }

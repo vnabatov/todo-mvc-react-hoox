@@ -1,3 +1,3 @@
-import use from './use';
+import use from './use'
 
-export { use };
+export { use }

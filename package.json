@@ -30,6 +30,7 @@
     "babel-plugin-rawact": "^0.3.0",
     "css-loader": "^1.0.1",
     "mini-css-extract-plugin": "^0.4.4",
+    "standardjs": "^1.0.0-alpha",
     "terser-webpack-plugin": "^1.1.0",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",

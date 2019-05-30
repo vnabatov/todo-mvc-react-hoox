@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import TodoItem from "./TodoItem";
+import React from 'react'
+import PropTypes from 'prop-types'
+import TodoItem from './TodoItem'
 
 const TodoList = ({ todos, editTodo, deleteTodo, toggleTodo }) => (
-  <ul className="todo-list">
+  <ul className='todo-list'>
     {todos.map(todo => (
       <TodoItem
         key={todo.id}
@@ -14,7 +14,7 @@ const TodoList = ({ todos, editTodo, deleteTodo, toggleTodo }) => (
       />
     ))}
   </ul>
-);
+)
 
 TodoList.propTypes = {
   todos: PropTypes.arrayOf(
@@ -27,6 +27,6 @@ TodoList.propTypes = {
   editTodo: PropTypes.func.isRequired,
   deleteTodo: PropTypes.func.isRequired,
   toggleTodo: PropTypes.func.isRequired
-};
+}
 
-export default TodoList;
+export default TodoList
