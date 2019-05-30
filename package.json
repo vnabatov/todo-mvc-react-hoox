@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --content-base dist/ --hot --inline --progress --colors"
+    "start": "webpack-dev-server --hot --inline"
   },
   "browserslist": [
     ">0.2%",
