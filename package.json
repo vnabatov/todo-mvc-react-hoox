@@ -12,7 +12,8 @@
     "todomvc-common": "^1.0.5"
   },
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --content-base dist/ --hot --inline --progress --colors"
   },
   "browserslist": [
     ">0.2%",
